@@ -25,7 +25,7 @@ const displayPhones = (phones, isShowAll) => {
     }
 
     phones.forEach(phone => {
-        console.log(phone);
+
         // 1 create a div
         const phoneCard = document.createElement('div');
         phoneCard.classList = `card bg-gray-100 p-4 shadow-xl`;
@@ -59,7 +59,7 @@ const handleShowDetail = async (id) => {
 }
 
 const showPhoneDetails = (phone) => {
-    console.log(phone)
+
     const phoneName = document.getElementById('show-details-phone-name');
     phoneName.innerText = phone.name;
 
@@ -83,13 +83,6 @@ const handleSearch = (isShowAll) => {
     loadPhone(searchText, isShowAll);
 }
 
-
-// const handleSearch2 = () => {
-//     toggleLoadingSpinner(true);
-//     const searchField = document.getElementById('search-field2');
-//     const searchText = searchField.value;
-//     loadPhone(searchText);
-// }
 
 const toggleLoadingSpinner = (isLoading) => {
     const loadingSpinner = document.getElementById('loading-spinner');
